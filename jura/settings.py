@@ -18,6 +18,7 @@ INSTALLED_APPS = [
 ]
 
 AUTH_USER_MODEL = 'accounts.User'
+ROOT_URLCONF = 'jura.urls'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -27,5 +28,6 @@ REST_FRAMEWORK = {
 
 MEDIA_URL = '/media/'
 #MEDIA_ROOT = BASE_DIR / 'media'
+
 
 
