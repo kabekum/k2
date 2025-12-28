@@ -14,7 +14,7 @@ INSTALLED_APPS = [
     'apps.matters',
     'apps.documents',
     'apps.billing',
-    'apps.tasks',
+    #'apps.tasks',
 ]
 
 AUTH_USER_MODEL = 'accounts.User'
@@ -27,4 +27,5 @@ REST_FRAMEWORK = {
 
 MEDIA_URL = '/media/'
 #MEDIA_ROOT = BASE_DIR / 'media'
+
 
