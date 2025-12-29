@@ -126,6 +126,14 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",  # Example for a local React frontend
+    "https://jurafrontweb.onrender.com",
+    "http://127.0.0.1:8000", # Example for local development
+]
+
+
+
 
 
 
