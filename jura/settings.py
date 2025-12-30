@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'apps.calendar',
     #'apps.compliance',
     #'apps.discovery',
-    'app.firms',
+    'apps.firms',
     'apps.permissions',
     'apps.portal',
     'apps.subscriptions',
@@ -156,6 +156,7 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ),
 }
+
 
 
 
