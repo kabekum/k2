@@ -43,6 +43,15 @@ INSTALLED_APPS = [
     'apps.trust',
     'drf_spectacular',
     #'apps.tasks',
+    'apps.ai',
+    'apps.calendar',
+    'apps.compliance',
+    'apps.discovery',
+    'firms',
+    'apps.permissions',
+    'apps.portal',
+    'apps.subscriptions',
+    
 ]
 
 
@@ -147,6 +156,7 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ),
 }
+
 
 
 
