@@ -38,11 +38,14 @@ INSTALLED_APPS = [
     'apps.matters',
     'apps.documents',
     'apps.billing',
+    'apps.trust',
+    'drf_spectacular',
     #'apps.tasks',
 ]
 
 
 MIDDLEWARE = [
+    'apps.compliance.middleware.AuditLogMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -132,7 +135,9 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:8000", # Example for local development
 ]
 
-
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
 
 
 
