@@ -3,6 +3,8 @@ from rest_framework.routers import DefaultRouter
 from apps.matters.views import MatterViewSet
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 from apps.discovery.views import EvidenceViewSet
+from apps.portal.views import ClientMattersView   
+
 
 
 router = DefaultRouter()
