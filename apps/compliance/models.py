@@ -13,5 +13,11 @@ class AuditLog(models.Model):
     timestamp = models.DateTimeField(auto_now_add=True)
     metadata = models.JSONField(default=dict)
 
+    class Meta:
+        app_label = 'compliance'
+
     def __str__(self):
         return f"{self.timestamp} - {self.action}"
+
+
+
