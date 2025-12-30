@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'apps.compliance.apps.ComplianceConfig',
+    'apps.discovery.apps.DiscoveryConfig',
 
     'apps.accounts',
     'apps.clients',
@@ -139,6 +140,7 @@ CORS_ALLOWED_ORIGINS = [
 REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
+
 
 
 
