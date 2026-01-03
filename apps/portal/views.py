@@ -18,3 +18,11 @@ class ClientMattersView(APIView):
         matters = Matter.objects.filter(client=user.client)
         serializer = MatterSerializer(matters, many=True)
         return Response(serializer.data)
+
+class HealthCheckView(APIView):
+    def get(self, request):
+        return Response({
+            "status": "ok",
+            "message": "Django API is live"
+        })
+
